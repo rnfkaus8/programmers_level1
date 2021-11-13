@@ -15,7 +15,6 @@ function solution(s) {
     Object.keys(strNumToNum).forEach(function(v){
         var regexp = new RegExp(v, "gi");
         s = s.replace(regexp , strNumToNum[v]);
-        console.log(s);
     });
     answer = parseInt(s);
 
@@ -25,4 +24,5 @@ function solution(s) {
 
 
 const s = "one4seveneightone";
+
 console.log(solution(s));
